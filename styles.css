@@ -88,7 +88,8 @@ label {
     font-size: 30px;
 }
 
-#start {
+#start,
+#randomness {
     background-color: blueviolet;
     cursor: pointer;
     border: none;
@@ -100,6 +101,14 @@ label {
 
 #start:hover {
     background-color: rgb(71, 5, 133);
+}
+
+#randomness {
+    background-color: brown;
+}
+
+#randomness:hover {
+    background-color: rgb(114, 4, 4);
 }
 
 select {

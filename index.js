@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const algorithmSelect = document.getElementById("algorithm");
     const startButton = document.getElementById("start");
+    const randomnessButton = document.getElementById("randomness");
     const arrayContainer = document.getElementById("array-container");
     const yearSpan = document.getElementById("year");
     const timeDisplay = document.getElementById("time");
@@ -141,7 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
     startButton.addEventListener("click", async () => {
         startButton.disabled = true; // Disable the button to prevent multiple clicks
         timeDisplay.textContent = "";
-        createRandomArray(arraySize);
         const algorithm = algorithmSelect.value;
 
         const startTime = performance.now();
@@ -173,5 +173,9 @@ document.addEventListener("DOMContentLoaded", () => {
         startButton.disabled = false; // Re-enable the button after sorting is done
     });
 
-    createRandomArray(arraySize);
+    randomnessButton.addEventListener("click", () => {
+        createRandomArray(arraySize);
+    });
+
+    createRandomArray(arraySize); // Initial array display
 });
