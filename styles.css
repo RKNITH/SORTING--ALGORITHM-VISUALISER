@@ -123,7 +123,8 @@ select {
     border: 1px solid #ccc;
     flex-wrap: wrap;
     padding: 1em;
-    margin: 40px;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 .bar {
