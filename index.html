@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sorting Algorithms Visualization</h1>
+    </header>
+    <main>
+        <div id="controls">
+            <label for="algorithm">Choose an algorithm:</label>
+            <select id="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="quick">Quick Sort</option>
+            </select>
+            <button id="start">Start Sorting</button>
+        </div>
+        <div id="time"></div>
+        <div id="array-container"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Raviranjan Kumar</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

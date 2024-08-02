@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header h1 {
+    font-size: 2em;
+    /* Adjust the font size as needed */
+    -webkit-animation: color-change 2s infinite;
+    animation: color-change 2s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: orange;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: orange;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+
+main {
+    padding: 2em;
+}
+
+#controls {
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+
+}
+
+label {
+    font-size: 30px;
+}
+
+#start {
+    background-color: blueviolet;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 30px;
+}
+
+#start:hover {
+    background-color: rgb(71, 5, 133);
+}
+
+select {
+    padding: 15px 20px;
+    border-radius: 7px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#time {
+    margin: 1em;
+    font-weight: bold;
+}
+
+#array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    flex-wrap: wrap;
+    padding: 1em;
+    margin-top: 40px;
+}
+
+.bar {
+    margin: 0 1px;
+    background-color: #007bff;
+    width: calc(100% / 50 - 2px);
+}
+
+.bar.sorted {
+    background-color: #28a745;
+    /* Color for sorted bars */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media screen and (max-width:480px) {
+    #controls {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    label {
+        font-size: 20px;
+
+    }
+
+    select {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+
+
+}
